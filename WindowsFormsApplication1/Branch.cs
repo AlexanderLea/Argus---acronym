@@ -225,6 +225,7 @@ namespace WindowsFormsApplication1
         public void addCategoryToBranch(Category tempCategory)
         {
             branchCategories.Add(tempCategory);
+            //making edits yo.
         }
     }
 }
