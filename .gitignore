@@ -1,0 +1,3 @@
+*.user # ignore all files that have the 'user' extension
+bin/    # ignore all files in the bin/ directory
+obj/    # ignore all files in the obj/ directory
