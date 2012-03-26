@@ -26,7 +26,7 @@ namespace WindowsFormsApplication1
         ///////////////////////////////////////////////////////////////////////////////////
 
         //<branch> Constructor
-        public void branch(string inBranchID, string inBranchNickname, string inBranchAddressNo, 
+        public Branch(string inBranchID, string inBranchNickname, string inBranchAddressNo, 
                             string inBranchAddressStreet, string inBranchAddressCity, string inBranchAddressCounty,
                                 string inBranchAddressPostCode, string inNearestBranch1,
                                     string inNearestBranch2, string inNearestBranch3, int inNoCategories) 

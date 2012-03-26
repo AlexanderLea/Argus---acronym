@@ -74,5 +74,15 @@ namespace WindowsFormsApplication1
         {
             MessageBox.Show("This will display the full catergory details in the message box.");
         }
+
+        private void MainBranch_Load(object sender, EventArgs e)
+        {
+            //create object array
+            
+            //create new instance of category
+
+
+
+        }
     }
 }

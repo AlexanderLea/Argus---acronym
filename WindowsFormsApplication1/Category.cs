@@ -17,7 +17,7 @@ namespace WindowsFormsApplication1
         ///////////////////////////////////////////////////////////////////////////////////
 
         //<Catergory> class constructor
-        public void category(int inCategoryID, string inCategoryName, int inNoProducts)
+        public Category(int inCategoryID, string inCategoryName, int inNoProducts)
         {
             categoryID = inCategoryID;
             categoryName = inCategoryName;

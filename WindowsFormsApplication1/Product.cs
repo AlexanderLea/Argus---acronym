@@ -15,7 +15,7 @@ namespace WindowsFormsApplication1
 	    private int productStockLevel;
 
 
-        public void product(int inProductID, string inProductTitle, string inProductDetails,
+        public Product(int inProductID, string inProductTitle, string inProductDetails,
                                 string inProductImageSource, float inProductPrice, int inProductStockLevel)
         {
             productID = inProductID;

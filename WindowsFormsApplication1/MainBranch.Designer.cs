@@ -419,6 +419,7 @@
             this.Controls.Add(this.grpCategoryDetails);
             this.Name = "MainBranch";
             this.Text = "MainBranch";
+            this.Load += new System.EventHandler(this.MainBranch_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grpProductInfo)).EndInit();
             this.grpProductDetails.ResumeLayout(false);
             this.grpProductDetails.PerformLayout();
