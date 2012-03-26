@@ -116,3 +116,5 @@ C:\Users\Jake\Dropbox\University\SOFT130\Assignment\SOFT130CWKProgram\WindowsFor
 C:\Users\Jake\Dropbox\University\SOFT130\Assignment\SOFT130CWKProgram\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Jake\Dropbox\University\SOFT130\Assignment\SOFT130CWKProgram\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.MainBranch.resources
 C:\Users\Jake\Dropbox\University\SOFT130\Assignment\SOFT130CWKProgram\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.ProductDetails.resources
+C:\Users\Alexander\Dropbox\University\SOFT130\Argus---acronym\Argus---acronym\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\Alexander\Dropbox\University\SOFT130\Argus---acronym\Argus---acronym\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb
