@@ -130,3 +130,27 @@ C:\Users\Alexander\Dropbox\University\SOFT130\Argus---acronym\Argus---acronym\Wi
 C:\Users\Alexander\Dropbox\University\SOFT130\Argus---acronym\Argus---acronym\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Alexander\Dropbox\University\SOFT130\Argus---acronym\Argus---acronym\WindowsFormsApplication1\obj\x86\Debug\Argus.exe
 C:\Users\Alexander\Dropbox\University\SOFT130\Argus---acronym\Argus---acronym\WindowsFormsApplication1\obj\x86\Debug\Argus.pdb
+C:\Documents and Settings\ajlea\Desktop\1\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\Argus.exe
+C:\Documents and Settings\ajlea\Desktop\1\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\Argus.pdb
+C:\Documents and Settings\ajlea\Desktop\1\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\bin\Debug\Argus.exe
+C:\Documents and Settings\ajlea\Desktop\1\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\bin\Debug\Argus.pdb
+C:\Documents and Settings\ajlea\Desktop\1\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\ajlea\Desktop\1\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.frmLogin.resources
+C:\Documents and Settings\ajlea\Desktop\1\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.frmBranchDetails.resources
+C:\Documents and Settings\ajlea\Desktop\1\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.MainBranch.resources
+C:\Documents and Settings\ajlea\Desktop\1\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.ProductDetails.resources
+C:\Documents and Settings\ajlea\Desktop\1\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\Argus.Properties.Resources.resources
+C:\Documents and Settings\ajlea\Desktop\1\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\ajlea\Desktop\1\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Alexander\Desktop\frmLogin dunt work_fileReadOkay\frmLogin dunt work_fileReadOkay\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\Argus.exe
+C:\Users\Alexander\Desktop\frmLogin dunt work_fileReadOkay\frmLogin dunt work_fileReadOkay\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\Argus.pdb
+C:\Users\Alexander\Desktop\frmLogin dunt work_fileReadOkay\frmLogin dunt work_fileReadOkay\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\bin\Debug\Argus.exe
+C:\Users\Alexander\Desktop\frmLogin dunt work_fileReadOkay\frmLogin dunt work_fileReadOkay\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\bin\Debug\Argus.pdb
+C:\Users\Alexander\Desktop\frmLogin dunt work_fileReadOkay\frmLogin dunt work_fileReadOkay\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Alexander\Desktop\frmLogin dunt work_fileReadOkay\frmLogin dunt work_fileReadOkay\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.frmLogin.resources
+C:\Users\Alexander\Desktop\frmLogin dunt work_fileReadOkay\frmLogin dunt work_fileReadOkay\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.frmBranchDetails.resources
+C:\Users\Alexander\Desktop\frmLogin dunt work_fileReadOkay\frmLogin dunt work_fileReadOkay\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.MainBranch.resources
+C:\Users\Alexander\Desktop\frmLogin dunt work_fileReadOkay\frmLogin dunt work_fileReadOkay\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.ProductDetails.resources
+C:\Users\Alexander\Desktop\frmLogin dunt work_fileReadOkay\frmLogin dunt work_fileReadOkay\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\Argus.Properties.Resources.resources
+C:\Users\Alexander\Desktop\frmLogin dunt work_fileReadOkay\frmLogin dunt work_fileReadOkay\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Alexander\Desktop\frmLogin dunt work_fileReadOkay\frmLogin dunt work_fileReadOkay\AlexanderLea-Argus---acronym-aa58a3b\WindowsFormsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog

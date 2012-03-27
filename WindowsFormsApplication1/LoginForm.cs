@@ -22,23 +22,28 @@ namespace WindowsFormsApplication1
         private void frmLogin_Load(object sender, EventArgs e)
         {
             //READ FILE            
-            //local variables
-            int i;
+            //local variables          
+            string[] productData;
+            string[] branchData;
+            string[] categoryData;
+
+            
 
             //set up StreamReader
             StreamReader reader = new StreamReader("argus-BIG.txt");
-            while (reader.ReadLine() != null)
+
+            //make reader start at beginning of file
+            reader.DiscardBufferedData();
+            reader.BaseStream.Seek(0, SeekOrigin.Begin);
+            reader.BaseStream.Position = 0;
+
+            while (!reader.EndOfStream)
             {
                 //create array to hold data values
-                string[] branchData = new string[11];
-
-                //make reader start at beginning of file
-                reader.DiscardBufferedData();
-                reader.BaseStream.Seek(0, SeekOrigin.Begin);
-                reader.BaseStream.Position = 0;
-
+                branchData = new string[11];
+              
                 //get 11 lines of branch data file
-                for (i = 0; i < 11; i++)
+                for (int i = 0; i < 11; i++)
                 {
                     branchData[i] = reader.ReadLine();
                 }
@@ -63,18 +68,19 @@ namespace WindowsFormsApplication1
                 //tempBranch.setNoCategories(Convert.ToInt32(branchData[10]));
 
                 //add branch to main arrayList
+                
                 tempBranch.addBranchToMainArgus(tempBranch);
 
 
-                for (i = 0; i < Convert.ToInt32(tempBranch.getNoCategories()); i++)
+                for (int i = 0; i < Convert.ToInt32(tempBranch.getNoCategories()); i++)
                 {
                     //create array to hold data values
-                    string[] categoryData = new string[3];
+                    categoryData = new string[3];
 
                     //get 3 lines of category data file
-                    for (i = 0; i < 3; i++)
+                    for (int j = 0; j < 3; j++)
                     {
-                        categoryData[i] = reader.ReadLine();
+                        categoryData[j] = reader.ReadLine();
                     }
 
                     //new instance of Category Class
@@ -89,15 +95,15 @@ namespace WindowsFormsApplication1
                     //add category to Categories in branch arrayList
                     tempBranch.addCategoryToBranch(tempCategory);
 
-                    for (i = 0; i < Convert.ToInt32(tempCategory.getNoProduct()); i++)
+                    for (int j = 0; j < Convert.ToInt32(tempCategory.getNoProduct()); j++)
                     {
                         //create array to hold data values
-                        string[] productData = new string[6];
+                        productData = new string[6];
 
                         //get 6 lines of category data file
-                        for (i = 0; i < 6; i++)
+                        for (int k = 0; k < 6; k++)
                         {
-                            productData[i] = reader.ReadLine();
+                            productData[k] = reader.ReadLine();
                         }
 
                         //new instance of Product Class
@@ -119,35 +125,47 @@ namespace WindowsFormsApplication1
             }
         }
 
-        public bool branchIDcheck()
+        public bool branchIDcheck(string inBranchID)
         {
-            string branchID;
-            int equal = 0;
             bool validID = false;
-
-            branchID = txtBranchID.Text;
 
             //Branch branch = new Branch();
             MainBranch main = new MainBranch();
 
-            while (equal != 0)
-                foreach (Branch b in main.mainArgus)
-                    String.Compare(branchID, b.getBranchID());
+            if (inBranchID != "")
+            {
+                do
+                {
+                    foreach (Branch b in main.mainArgus)
+                    {
+                        if (inBranchID == b.getBranchID())
+                            validID = true;
+                    }
+                } while (validID == false);
+            }
             
-            
+            MessageBox.Show("valid" + Convert.ToString(validID));
 
             return validID;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
-        {
-            bool valid;
+        {            
+            bool valid = false;
             MainBranch MainBranch = new MainBranch();
-            
-            valid = branchIDcheck();
 
-            MainBranch.Show();
-            this.Hide();
+            //get input from text field and pass it to login validation            
+            valid = branchIDcheck(txtBranchID.Text);
+
+            if (valid == true)
+            {
+                MainBranch.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Invalid branch ID - please try again");
+            }
         }
 
         private void txtBranchID_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)

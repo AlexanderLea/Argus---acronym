@@ -30,8 +30,8 @@
         {
             this.lblBranchLogin = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
-            this.txtBranchID = new System.Windows.Forms.MaskedTextBox();
             this.lblBranchID = new System.Windows.Forms.Label();
+            this.txtBranchID = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblBranchLogin
@@ -50,39 +50,34 @@
             this.btnLogin.Location = new System.Drawing.Point(85, 93);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(94, 37);
-            this.btnLogin.TabIndex = 1;
+            this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
-            // txtBranchID
-            // 
-            this.txtBranchID.Location = new System.Drawing.Point(148, 57);
-            this.txtBranchID.Mask = "00000";
-            this.txtBranchID.Name = "txtBranchID";
-            this.txtBranchID.PromptChar = ' ';
-            this.txtBranchID.Size = new System.Drawing.Size(47, 20);
-            this.txtBranchID.TabIndex = 2;
-            this.txtBranchID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtBranchID.ValidatingType = typeof(int);
-            this.txtBranchID.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtBranchID_MaskInputRejected);
-            // 
             // lblBranchID
             // 
             this.lblBranchID.AutoSize = true;
-            this.lblBranchID.Location = new System.Drawing.Point(82, 63);
+            this.lblBranchID.Location = new System.Drawing.Point(69, 63);
             this.lblBranchID.Name = "lblBranchID";
             this.lblBranchID.Size = new System.Drawing.Size(58, 13);
             this.lblBranchID.TabIndex = 3;
             this.lblBranchID.Text = "Branch ID:";
+            // 
+            // txtBranchID
+            // 
+            this.txtBranchID.Location = new System.Drawing.Point(133, 60);
+            this.txtBranchID.Name = "txtBranchID";
+            this.txtBranchID.Size = new System.Drawing.Size(63, 20);
+            this.txtBranchID.TabIndex = 1;
             // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 146);
-            this.Controls.Add(this.lblBranchID);
             this.Controls.Add(this.txtBranchID);
+            this.Controls.Add(this.lblBranchID);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.lblBranchLogin);
             this.HelpButton = true;
@@ -98,8 +93,8 @@
 
         private System.Windows.Forms.Label lblBranchLogin;
         private System.Windows.Forms.Button btnLogin;
-        private System.Windows.Forms.MaskedTextBox txtBranchID;
         private System.Windows.Forms.Label lblBranchID;
+        private System.Windows.Forms.TextBox txtBranchID;
     }
 }
 
