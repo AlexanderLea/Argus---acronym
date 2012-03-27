@@ -119,27 +119,33 @@ namespace WindowsFormsApplication1
             }
         }
 
-        public bool BranchSigCheck(string data)
+        public bool branchIDcheck()
         {
-            bool branchcount = false;
-            string[] check = new string[3];
+            string branchID;
+            int equal = 0;
+            bool validID = false;
 
-            int checkcount = 0;
+            branchID = txtBranchID.Text;
 
-            foreach (char c in data)
-            {
-                check[checkcount] = Convert.ToString(c);
-            }
+            //Branch branch = new Branch();
+            MainBranch main = new MainBranch();
 
-            if ((check[0] == "1") && (check[1] == "0") && (check[2] == "0")) branchcount = true;
-            else branchcount = false;
+            while (equal != 0)
+                foreach (Branch b in main.mainArgus)
+                    String.Compare(branchID, b.getBranchID());
+            
+            
 
-            return branchcount;
+            return validID;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            bool valid;
             MainBranch MainBranch = new MainBranch();
+            
+            valid = branchIDcheck();
+
             MainBranch.Show();
             this.Hide();
         }
