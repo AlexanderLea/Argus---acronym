@@ -22,6 +22,10 @@ namespace WindowsFormsApplication1
         private int noCategories;
         ArrayList branchCategories;
 
+
+        //new instance of mainBranch class
+        MainBranch mainBranch = new MainBranch();
+
         ///////////////////////////////////////////////////////////////////////////////////
         ///////////////////////////////////////////////////////////////////////////////////
 
@@ -112,15 +116,8 @@ namespace WindowsFormsApplication1
 
         //<branch> class setter methods
         public void setBranchID(string inBranchID)
-        {
-            try
-            {
+        {          
                 branchID = inBranchID; //convert local variable to global variable, and save it
-            }
-            catch (FormatException e)
-            {
-                System.Windows.Forms.MessageBox.Show("ERROR: " + e.Message + " please enter a valid integer (for Branch IDs)");
-            }
         }
 
         public void setBranchNickname(string inBranchNickname)
@@ -155,38 +152,19 @@ namespace WindowsFormsApplication1
 
         public void setNearestBranch1(string inNearestBranch1)
         {
-            try
-            {
-                nearestBranch1 = inNearestBranch1; //convert local variable to global variable, and save it
-            }
-            catch (FormatException e)
-            {
-                System.Windows.Forms.MessageBox.Show("ERROR: " + e.Message + " please enter a valid integer (for Branch IDs)");
-            }
+            nearestBranch1 = inNearestBranch1; //convert local variable to global variable, and save it
+
         }
+
 
         public void setNearestBranch2(string inNearestBranch2)
         {
-            try
-            {
-                nearestBranch2 = inNearestBranch2; //convert local variable to global variable, and save it
-            }
-            catch (FormatException e)
-            {
-                System.Windows.Forms.MessageBox.Show("ERROR: " + e.Message + " please enter a valid integer (for Branch IDs)");
-            }
+            nearestBranch2 = inNearestBranch2; //convert local variable to global variable, and save it            
         }
 
         public void setNearestBranch3(string inNearestBranch3)
-        {
-            try
-            {
-                nearestBranch3 = inNearestBranch3; //convert local variable to global variable, and save it
-            }
-            catch (FormatException e)
-            {
-                System.Windows.Forms.MessageBox.Show("ERROR: " + e.Message + " please enter a valid integer (for Branch IDs)");
-            }
+        {           
+            nearestBranch3 = inNearestBranch3; //convert local variable to global variable, and save it            
         }
 
         //setter method for array of get nearest branch ids
@@ -198,24 +176,16 @@ namespace WindowsFormsApplication1
 
         public void setNoCategories(int inNoCategories)
         {
-            try
-            {
-                noCategories = Convert.ToInt32(inNoCategories);
-            }
-            catch (FormatException e)
-            {
-                System.Windows.Forms.MessageBox.Show("ERROR: " + e.Message + " please enter a valid integer (for number of categories)");
-            }
-        }
+            noCategories = Convert.ToInt32(inNoCategories);            
+        }                
 
         ///////////////////////////////////////////////////////////////////////////////////
         ///////////////////////////////////////////////////////////////////////////////////
 
         //Add branch to main array of branches
         public void addBranchToMainArgus(Branch tempBranch)
-        {
-            MainBranch mainArray = new MainBranch();
-            mainArray.mainArgus.Add(tempBranch);
+        {            
+            mainBranch.mainArgus.Add(tempBranch);
         }
 
         ///////////////////////////////////////////////////////////////////////////////////

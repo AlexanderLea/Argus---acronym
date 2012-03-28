@@ -13,11 +13,9 @@ namespace WindowsFormsApplication1
 {
     public partial class MainBranch : Form
     {
-        const string location = "//Filespace/Home/tdymond/University Coursework/SOFT130/";
-        //StreamReader FileReader = new StreamReader(location + "argus-SMALL.txt");
+
         public ArrayList mainArgus = new ArrayList();
         
-
         public MainBranch()
         {
             InitializeComponent();
@@ -77,11 +75,6 @@ namespace WindowsFormsApplication1
 
         private void MainBranch_Load(object sender, EventArgs e)
         {
-            //create object array
-            
-            //create new instance of category
-
-
 
         }
     }

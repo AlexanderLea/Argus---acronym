@@ -26,9 +26,7 @@ namespace WindowsFormsApplication1
             string[] productData;
             string[] branchData;
             string[] categoryData;
-
             
-
             //set up StreamReader
             StreamReader reader = new StreamReader("argus-BIG.txt");
 
@@ -53,24 +51,9 @@ namespace WindowsFormsApplication1
                                                 branchData[3], branchData[4], branchData[5], 
                                                     branchData[6], branchData[7], branchData[8], 
                                                         branchData[9], Convert.ToInt32(branchData[10]));
-
-                //set branch values from branchData array
-                //tempBranch.setBranchID(branchData[0]);
-                //tempBranch.setBranchNickname(branchData[1]);
-                //tempBranch.setBranchAddressNo(branchData[2]);
-                //tempBranch.setBranchAddressStreet(branchData[3]);
-                //tempBranch.setBranchAddressCity(branchData[4]);
-                //tempBranch.setBranchAddressCounty(branchData[5]);
-                //tempBranch.setBranchAddressPostCode(branchData[6]);
-                //tempBranch.setNearestBranch1(branchData[7]);
-                //tempBranch.setNearestBranch2(branchData[8]);
-                //tempBranch.setNearestBranch3(branchData[9]);
-                //tempBranch.setNoCategories(Convert.ToInt32(branchData[10]));
-
-                //add branch to main arrayList
-                
+               
+                //add branch to main arrayList                
                 tempBranch.addBranchToMainArgus(tempBranch);
-
 
                 for (int i = 0; i < Convert.ToInt32(tempBranch.getNoCategories()); i++)
                 {
@@ -86,11 +69,6 @@ namespace WindowsFormsApplication1
                     //new instance of Category Class
                     Category tempCategory = new Category(Convert.ToInt32(categoryData[0]), categoryData[1], 
                                                             Convert.ToInt32(categoryData[2]));
-
-                    //set values
-                    //tempCategory.setCategoryID(Convert.ToInt32(categoryData[0])); //ERROR! reading the line below it should be
-                    //tempCategory.setCategoryName(categoryData[1]);
-                    //tempCategory.setNoProducts(Convert.ToInt32(categoryData[2]));
 
                     //add category to Categories in branch arrayList
                     tempBranch.addCategoryToBranch(tempCategory);
@@ -110,19 +88,11 @@ namespace WindowsFormsApplication1
                         Product tempProduct = new Product(Convert.ToInt32(productData[0]), productData[1], productData[2],
                                                             productData[3], Convert.ToSingle(productData[4]), Convert.ToInt32(productData[5]));
 
-                        //add values to temp product
-                        //tempProduct.setProductID(Convert.ToInt32(productData[0]));
-                        //tempProduct.setProductTitle(productData[1]);
-                        //tempProduct.setProductDetails(productData[2]);
-                        //tempProduct.setProductImageSource(productData[3]);
-                        //tempProduct.setProductPrice(Convert.ToSingle(productData[4]));
-                        //tempProduct.setProductStockLevel(Convert.ToInt32(productData[5]));
-
                         //add product to productsincategory arraylist
                         tempCategory.addProduct(tempProduct);
                     }
                 }
-            }
+            }            
         }
 
         public bool branchIDcheck(string inBranchID)
@@ -134,8 +104,9 @@ namespace WindowsFormsApplication1
 
             if (inBranchID != "")
             {
+                MessageBox.Show("branches: " + main.mainArgus.Count);
                 do
-                {
+                {                    
                     foreach (Branch b in main.mainArgus)
                     {
                         if (inBranchID == b.getBranchID())
